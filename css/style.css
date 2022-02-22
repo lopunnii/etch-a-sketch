@@ -1,11 +1,13 @@
 .grid-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 800px;
 }
 
 .square {
-    height: 50px;
-    width: 50px;
+    height: 48px;
+    width: 48px;
     background-color: white;
-    border: solid black 2px;
+    border: solid black 1px;
 }
