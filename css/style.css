@@ -1,3 +1,8 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .square {
     height: 50px;
     width: 50px;
