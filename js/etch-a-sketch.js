@@ -13,9 +13,22 @@ function hover () {
     let squares = document.querySelectorAll('.square');
     squares.forEach((square) => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = "black";
+            square.style.backgroundColor = 'black';
         });
     });
 }
 
 hover();
+
+function newGrid () {
+    let button = document.querySelector('.new-grid');
+    button.addEventListener('click', () => {
+    let squares = document.querySelectorAll('.square');
+    squares.forEach((square) => {
+        square.style.backgroundColor = 'white';
+    });
+});
+}; 
+
+newGrid();
+
