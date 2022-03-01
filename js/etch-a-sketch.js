@@ -32,3 +32,11 @@ function newGrid () {
 
 newGrid();
 
+function gridSize () {
+    let button = document.querySelector('.grid-size');
+    button.addEventListener('click', () => {
+        let size = prompt('How many squares per side? (The maximum is 100.)', '50');
+    });
+}
+
+gridSize();
