@@ -52,3 +52,26 @@ function gridSize () {
 }
 
 gridSize();
+
+function randomColor() {
+    let color = [];
+    for (let i = 0; i < 3; i++) {
+      color.push(Math.floor(Math.random() * 256));
+    }
+    return 'rgb(' + color.join(', ') + ')';
+  } 
+  
+
+function rainbowPen () {
+    let button = document.querySelector('.rainbow');
+    button.addEventListener('click', () => {
+        let squares = document.querySelectorAll('.square');
+        squares.forEach((square) => {
+            square.addEventListener('mouseover', () => {
+                square.style.backgroundColor = randomColor();
+            });
+        });        
+    });
+}
+
+rainbowPen();
