@@ -7,21 +7,28 @@ button {
     padding: 10px;
 }
 
-.left-column {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+body {
+    background-color: whitesmoke;
 }
 
 .content {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
 }
 
 .grid-container {
     display: flex;
-        height: 800px;
-    width: 800px;
+    margin-top: 50px;
+    height: 700px;
+    width: 700px;
 }
 
 .row {
