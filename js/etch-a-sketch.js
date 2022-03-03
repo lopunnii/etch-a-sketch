@@ -75,3 +75,12 @@ function rainbowPen () {
 }
 
 rainbowPen();
+
+function blackPen () {
+    let button = document.querySelector('.black');
+    button.addEventListener('click',() => {
+        hover();
+    });
+}
+
+blackPen();

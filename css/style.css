@@ -2,6 +2,11 @@ h1 {
     text-align: center;
 }
 
+p {
+    align-self: center;
+    font-weight: 550;
+}
+
 button {
     font-size: 16px;
     padding: 10px;
