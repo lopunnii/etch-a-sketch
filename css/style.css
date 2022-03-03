@@ -5,6 +5,7 @@ h1 {
 button {
     font-size: 16px;
     padding: 10px;
+    cursor: pointer;
 }
 
 body {
