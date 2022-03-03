@@ -1,4 +1,7 @@
+//Grid
+
 createGrid(16);
+
 function createGrid (size) {
     document.querySelector('.grid-container').innerHTML = '';
     for(i=0; i < size; i++) {
@@ -14,17 +17,6 @@ function createGrid (size) {
 };
     hover();
 };
-
-
-
-function hover () {
-    let squares = document.querySelectorAll('.square');
-    squares.forEach((square) => {
-        square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = 'black';
-        });
-    });
-}
 
 function newGrid () {
     let button = document.querySelector('.new-grid');
@@ -52,6 +44,17 @@ function gridSize () {
 }
 
 gridSize();
+
+//Hover Effects (Pen Colours)
+
+function hover () {
+    let squares = document.querySelectorAll('.square');
+    squares.forEach((square) => {
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = 'black';
+        });
+    });
+}
 
 function randomColor() {
     let color = [];
