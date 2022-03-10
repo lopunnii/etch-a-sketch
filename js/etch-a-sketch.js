@@ -38,7 +38,9 @@ function gridSize () {
             size = 16;
         } else if (size > 100) {
             size = 100;
-        };
+        } else if (size != Number) {
+            size = 16; 
+        }; 
         createGrid(size);
     });
 }
