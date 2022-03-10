@@ -3,7 +3,7 @@
 createGrid(16);
 
 function createGrid (size) {
-    document.querySelector('.grid-container').innerHTML = '';
+    document.querySelector('.grid-container').textContent = '';
     for(i=0; i < size; i++) {
         let gridContainer = document.querySelector('.grid-container');
         let row = document.createElement('div');
